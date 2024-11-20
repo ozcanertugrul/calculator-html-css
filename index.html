@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hesap Makinesi</title>
+  <!-- Work Sans Fontu -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="calculator">
+    <!-- Toggle Button -->
+    <button class="toggle-btn">🌞 / 🌙</button>
+
+    <!-- İşlem Gösterge Alanı -->
+    <div class="display-area">
+    <div class="operation-display">123 + 456</div>
+    <div class="result-display">579</div>
+
+    <!-- Button Rows -->
+    <div class="button-row">
+      <button class="calc-btn">C</button>
+      <button class="calc-btn">±</button>
+      <button class="calc-btn">%</button>
+      <button class="calc-btn">/</button>
+    </div>
+    <div class="button-row">
+      <button class="calc-btn">1</button>
+      <button class="calc-btn">2</button>
+      <button class="calc-btn">3</button>
+      <button class="calc-btn">*</button>
+    </div>
+    <div class="button-row">
+      <button class="calc-btn">4</button>
+      <button class="calc-btn">5</button>
+      <button class="calc-btn">6</button>
+      <button class="calc-btn">-</button>
+    </div>
+    <div class="button-row">
+    <button class="calc-btn">7</button>
+      <button class="calc-btn">8</button>
+      <button class="calc-btn">9</button>
+      <button class="calc-btn">+</button>
+    </div>
+      <div class="button-row">
+        <button class="calc-btn">0</button>
+        <button class="calc-btn">.</button>
+        <button class="calc-btn">Del</button>
+        <button class="calc-btn">=</button>
+    
+  </div>
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle-btn');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+  
+</body>
+</html>

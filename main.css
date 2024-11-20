@@ -1,0 +1,115 @@
+/* Global Ayarlar */
+body {
+  margin: 0;
+  font-family: 'Work Sans', Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  width: 390px;
+  height: 812px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 20px; /* Sol taraf için 20px boşluk */
+  padding-right: 20px; /* Sağ taraf için 20px boşluk */
+}
+
+/* Toggle Button */
+.toggle-btn {
+  position: absolute;
+  top: 60px; /* Sayfanın üstünden 60px aşağıda */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72px;
+  height: 32px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* İşlem ve Sonuç Alanı */
+.display-area {
+  position: absolute;
+  top: 150px; /* Toggle butonundan 16px aşağıda */
+  width: 100%; /* Genişlik %100 */
+  padding: 0; /* Sağ ve soldan padding 0 */
+}
+
+/* Yapılan işlem */
+.operation-display {
+  font-weight: bold;
+  font-size: 24px; /* Yapılan işlem boyutu */
+  color: #777;
+  margin-bottom: 16px; /* Sonuç kısmı ile arasında 16px boşluk */
+  text-align: right; /* Sağ tarafa yaslanacak */
+  padding-right: 40px; /* Sağdan 40px boşluk bırakılacak */
+}
+
+/* Sonuç */
+.result-display {
+  font-size: 70px; /* Sonuç boyutu */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px; /* Sonuç kısmı ile alttaki buton satırları arasında 16px boşluk */
+  text-align: right; /* Sağ tarafa yaslanacak */
+  padding-right: 40px; /* Sağdan 40px boşluk bırakılacak */
+}
+
+/* Button Rows */
+.button-row {
+  display: flex;
+  justify-content: 16px; /* Butonlar arasında eşit boşluk */
+  width: 100%; /* Row genişliği %100 olacak */
+  height: 72px; /* Row yüksekliği 72px */
+  margin-bottom: 16px; /* Row'lar arası 16px boşluk */
+}
+
+/* Butonlar */
+.calc-btn {
+  width: 72px; /* Genişlik 72px */
+  height: 72px; /* Yükseklik 72px */
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 8px; /* Butonlar arasındaki boşluk */
+}
+
+/* Hover efekti */
+.calc-btn:hover {
+  background-color: #d5d5d5;
+}
+
+/* Temalar */
+body.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark .calculator {
+  background-color: #1e1e1e;
+}
+
+body.dark .calc-btn {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark .calc-btn:hover {
+  background-color: #444;
+}
